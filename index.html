@@ -6,15 +6,27 @@
     <title>Aula HTML</title>
     <style>
         #bloco{
+            text-shadow: 2px 3px 2px red;
             color:blue
+        }
+        .bloco{
+            background-color: green;
+            color: white !important;
+        }
+        .tamFonte{
+            font-size: 22px;
+
         }
     </style>
 </head>
 <body>
     <!--Atributo Inline-->
-    <h1 style="color: crimson;">Minha Página inicial</h1>
+    <h1 style="color: crimson; text-shadow: 2px 3px 2px blue;" class="bloco">Minha Página inicial</h1>
+    <br>
     <!-- Atributo em bloco -->
-    <h2 id="bloco">Minha Página2</h2>
+    <h1 class="tamFonte" id="bloco">Minha Página2</h1>
+    <br>
+    <h1 class="bloco tamFonte">Minha Página3</h1>
     <p>Esté é meu primeiro paragrafo</p>
 </body>
 </html>
