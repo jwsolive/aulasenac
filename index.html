@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aulas HTML</title>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="./css/index.css">
 <style>
 /* #bloco {
 color: blue;
@@ -33,17 +33,31 @@ font-size: 22px;
 <br>
 <h1 id="titulo" class="bloco tamFonte">Minha página3 inicial</h1>
 <p id="mudaTexto">Este é meu primeiro parágrafo</p>
-<button onclick="mudarTexto()">Mudar</button>
+<button onclick="mudarTexto()">Mudar</button><br><br>
+<button onclick="inserirTexto()">Inserir</button>
+<button onclick="limparTexto()">Limpar</button>
+<input type="text" name="texto" id="campo">
+<hr>
+<a href="cadastro.html">Cadastro</a>
 </body>
 
 <script>
 
 function mudarTexto() {
-
 var txt = document.getElementById('titulo').innerHTML
 console.log(txt)
 document.getElementById('mudaTexto').innerHTML = txt
 document.getElementById('mudaTexto').style.color = 'red'
+}
+
+function inserirTexto () {
+var texto = "Henning Summer"
+document.getElementById('campo').value = texto
+}
+
+function limparTexto () {
+document.getElementById('campo').value = ''
+
 }
 
 </script>
