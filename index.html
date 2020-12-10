@@ -1,33 +1,51 @@
+	
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula HTML</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-        /* #bloco{
-            text-shadow: 2px 3px 2px red;
-            color:blue
-        }
-        .bloco{
-            background-color: green;
-            color: white !important;
-        }
-        .tamFonte{
-            font-size: 22px;
+<html lang="en">
 
-        } */
-    </style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas HTML</title>
+<link rel="stylesheet" href="index.css">
+<style>
+/* #bloco {
+color: blue;
+text-shadow: 2px 2px 2px red;
+}
+
+.bloco {
+background-color: green;
+color: white !important;
+}
+
+.tamFonte {
+font-size: 22px;
+} */
+</style>
 </head>
+
 <body>
-    <!--Atributo Inline-->
-    <h1 style="color: crimson; text-shadow: 2px 3px 2px blue;" class="bloco">Minha Página inicial</h1>
-    <br>
-    <!-- Atributo em bloco -->
-    <h1 class="tamFonte" id="bloco">Minha Página2</h1>
-    <br>
-    <h1 class="bloco tamFonte">Minha Página3</h1>
-    <p>Esté é meu primeiro paragrafo</p>
+<!-- atributo inline -->
+<h1 class="bloco tamFonte" style="color: red; text-shadow: 2px 3px 2px blue;"> Minha página inicial</h1>
+<!-- atributo em bloco -->
+<br>
+<h1 class="bloco" id="bloco">Minha página2 inicial</h1>
+<br>
+<h1 id="titulo" class="bloco tamFonte">Minha página3 inicial</h1>
+<p id="mudaTexto">Este é meu primeiro parágrafo</p>
+<button onclick="mudarTexto()">Mudar</button>
 </body>
+
+<script>
+
+function mudarTexto() {
+
+var txt = document.getElementById('titulo').innerHTML
+console.log(txt)
+document.getElementById('mudaTexto').innerHTML = txt
+document.getElementById('mudaTexto').style.color = 'red'
+}
+
+</script>
+
 </html>
